@@ -22,4 +22,8 @@ public class RequestCoupon {
      */
     @NotNull
     private Long couponTemplateId;
+
+    // Loadbalancer - 用作测试流量打标(打标签的意思，标识是否是特定的请求)
+    // 测试流量打标的方法有很多种，比如添加一个特殊的 key-value 到 Http header，或者塞一个值到 RPC Context 中
+    private String trafficVersion;
 }
