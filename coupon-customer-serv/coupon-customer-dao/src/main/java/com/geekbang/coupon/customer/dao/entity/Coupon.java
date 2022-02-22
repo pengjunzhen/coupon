@@ -57,6 +57,6 @@ public class Coupon {
     private CouponTemplateInfo templateInfo;
 
     @CreatedDate
-    @Column(name = "create_time", nullable = false)
+    @Column(name = "created_time", nullable = false)
     private Date createdTime;
 }
